@@ -43,7 +43,7 @@ namespace CPUWindowsFormsFramework
 
             
         }
-        public void FormatGridForSearchResults(DataGridView grid)
+        public static void FormatGridForSearchResults(DataGridView grid)
         {
             grid.AllowUserToAddRows = false;
             grid.ReadOnly = true;
