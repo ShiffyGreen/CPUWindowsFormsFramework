@@ -51,7 +51,7 @@ namespace CPUWindowsFormsFramework
             grid.EditMode = DataGridViewEditMode.EditOnEnter;
             DoFormatGrid(grid, tablename);
         }
-        private static void DoFormatGrid(DataGridView grid, string tablename)
+        public static void DoFormatGrid(DataGridView grid, string tablename)
         {
             grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             grid.RowHeadersWidth = 25;
@@ -93,6 +93,11 @@ namespace CPUWindowsFormsFramework
             }
 
             return value;
+        }
+        public static int GetNewId(int id)
+        {
+            
+            return id;
         }
         public static void AddComboBoxToGrid(DataGridView grid, DataTable datasource, string tablename, string displaymember)
         {
